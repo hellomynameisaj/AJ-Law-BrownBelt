@@ -1,4 +1,4 @@
-﻿using System.Collections;
+﻿ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -22,7 +22,7 @@ public class Pickups : MonoBehaviour
             score++;
             scoreText.text = score.ToString();
             Debug.Log(score);
-            Destroy(other.gameObject);
+            Destroy(gameObject);
 
             Pickup.Play();
         }
