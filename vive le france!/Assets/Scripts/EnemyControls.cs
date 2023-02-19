@@ -37,21 +37,21 @@ public class EnemyControls : MonoBehaviour
         }
         if (Vector3.Distance(transform.position, target.position) >= attackingDistance)
         {
-            rigidbodyEnemy.isKinematic = true;
+            rigidbodyEnemy.isKinematic = false;
             direction = target.position - transform.position;
             direction.y = 0;
 
             transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(direction), 100);
-        }
 
-        if (rigidbodyEnemy.velocity.sqrMagnitude != 0)
-        {
-            rigidbodyEnemy.velocity = transform.forward * speed;
-            animatorEnemy.SetBool("Walk", true);
+            if (rigidbodyEnemy.velocity.sqrMagnitude != 0)
+            {
+                rigidbodyEnemy.velocity = transform.forward * speed;
+                animatorEnemy.SetBool("Walk", true);
+            }
         }
         else if (Vector3.Distance(transform.position, target.position) <= attackingDistance)
         {
-            rigidbodyEnemy.isKinematic = true;
+            rigidbodyEnemy.isKinematic = false;
             rigidbodyEnemy.velocity = Vector3.zero;
             animatorEnemy.SetBool("Walk", false);
             isFollowingTarget = false;
@@ -76,14 +76,14 @@ public class EnemyControls : MonoBehaviour
         }
 
         currentAttackingTime += Time.deltaTime;
-
-        if(currentAttackingTime > maxAttackingTime)
+        Debug.Log(currentAttackingTime);
+        if (currentAttackingTime > maxAttackingTime)
         {
-            currentAttackingTime = 0f;
             EnemyAttack(Random.Range(1, 4));
+            currentAttackingTime = 0f;
         }
 
-        if(Vector3.Distance(transform.position, target.position) > attackingDistance + chasingPlayer)
+        if (Vector3.Distance(transform.position, target.position) > attackingDistance + chasingPlayer) 
         {
             isAttackingTarget = false;
             isFollowingTarget = true;
@@ -92,7 +92,7 @@ public class EnemyControls : MonoBehaviour
 
     public void EnemyAttack(int attack)
     {
-        if(attack == 1)
+        if (attack == 1)
         {
             animatorEnemy.SetTrigger("Attack1");
         }
