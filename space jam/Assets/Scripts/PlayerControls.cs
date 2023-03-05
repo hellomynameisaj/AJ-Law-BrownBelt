@@ -92,6 +92,128 @@ public class PlayerControls : MonoBehaviour
                 Instantiate(projectile, transform.position + leftOffset, transform.rotation);
             }
 
+            Instantiate(projectile, transform.position, transform.rotation);
+            if (currentLevel >= 8)
+            {
+                Vector3 rightOffset = new Vector3(0.2f, 0, 0);
+                Vector3 leftOffset = new Vector3(-0.2f, 0, 0);
+                Instantiate(projectile, transform.position + rightOffset, transform.rotation);
+                Instantiate(projectile, transform.position + leftOffset, transform.rotation);
+                Vector3 right0ffset = new Vector3(0.4f, -0.2f, 0);
+                Vector3 left0ffset = new Vector3(-0.4f, -0.2f, 0);
+                Instantiate(projectile, transform.position + right0ffset, transform.rotation);
+                Instantiate(projectile, transform.position + left0ffset, transform.rotation);
+                Vector3 rightoffset = new Vector3(0.6f, 0.4f, 0);
+                Vector3 leftoffset = new Vector3(-0.6f, 0.4f, 0);
+                Instantiate(projectile, transform.position + rightoffset, transform.rotation);
+                Instantiate(projectile, transform.position + leftoffset, transform.rotation);
+                Vector3 rightOOfset = new Vector3(0.8f, 0.6f, 0);
+                Vector3 leftOOfset = new Vector3(-0.8f, 0.6f, 0);
+                Instantiate(projectile, transform.position + rightOOfset, transform.rotation);
+                Instantiate(projectile, transform.position + leftOOfset, transform.rotation);
+                Vector3 rightoofset = new Vector3(1f, 0.8f, 0);
+                Vector3 leftoofset = new Vector3(-1f, 0.8f, 0);
+                Instantiate(projectile, transform.position + rightoofset, transform.rotation);
+                Instantiate(projectile, transform.position + leftoofset, transform.rotation);
+            }
+
+
+            if (currentLevel >= 16)
+            {
+                Vector3 rightOffset = new Vector3(1.2f, 1, 0);
+                Vector3 leftOffset = new Vector3(-1.2f, 1, 0);
+                Instantiate(projectile, transform.position + rightOffset, transform.rotation);
+                Instantiate(projectile, transform.position + leftOffset, transform.rotation);
+                Vector3 right0ffset = new Vector3(1.4f, 1.2f, 0);
+                Vector3 left0ffset = new Vector3(-1.4f, 1.2f, 0);
+                Instantiate(projectile, transform.position + right0ffset, transform.rotation);
+                Instantiate(projectile, transform.position + left0ffset, transform.rotation);
+                Vector3 rightoffset = new Vector3(1.6f, 1.4f, 0);
+                Vector3 leftoffset = new Vector3(-1.6f, 1.4f, 0);
+                Instantiate(projectile, transform.position + rightoffset, transform.rotation);
+                Instantiate(projectile, transform.position + leftoffset, transform.rotation);
+                Vector3 rightOOfset = new Vector3(1.8f, 1.6f, 0);
+                Vector3 leftOOfset = new Vector3(-1.8f, 1.6f, 0);
+                Instantiate(projectile, transform.position + rightOOfset, transform.rotation);
+                Instantiate(projectile, transform.position + leftOOfset, transform.rotation);
+                Vector3 rightoofset = new Vector3(2f, 1.8f, 0);
+                Vector3 leftoofset = new Vector3(-2f, 1.8f, 0);
+                Instantiate(projectile, transform.position + rightoofset, transform.rotation);
+                Instantiate(projectile, transform.position + leftoofset, transform.rotation);
+            }
+
+            if (currentLevel >= 24)
+            {
+                Vector3 rightOffset = new Vector3(1.2f, 1, 0);
+                Vector3 leftOffset = new Vector3(-1.2f, 1, 0);
+                Instantiate(projectile, transform.position + rightOffset, transform.rotation);
+                Instantiate(projectile, transform.position + leftOffset, transform.rotation);
+                Vector3 right0ffset = new Vector3(1.4f, 1.2f, 0);
+                Vector3 left0ffset = new Vector3(-1.4f, 1.2f, 0);
+                Instantiate(projectile, transform.position + right0ffset, transform.rotation);
+                Instantiate(projectile, transform.position + left0ffset, transform.rotation);
+                Vector3 rightoffset = new Vector3(1.6f, 1.4f, 0);
+                Vector3 leftoffset = new Vector3(-1.6f, 1.4f, 0);
+                Instantiate(projectile, transform.position + rightoffset, transform.rotation);
+                Instantiate(projectile, transform.position + leftoffset, transform.rotation);
+                Vector3 rightOOfset = new Vector3(1.8f, 1.6f, 0);
+                Vector3 leftOOfset = new Vector3(-1.8f, 1.6f, 0);
+                Instantiate(projectile, transform.position + rightOOfset, transform.rotation);
+                Instantiate(projectile, transform.position + leftOOfset, transform.rotation);
+                Vector3 rightoofset = new Vector3(2f, 1.8f, 0);
+                Vector3 leftoofset = new Vector3(-2f, 1.8f, 0);
+                Instantiate(projectile, transform.position + rightoofset, transform.rotation);
+                Instantiate(projectile, transform.position + leftoofset, transform.rotation);
+            }
+
+            if (currentLevel >= 32)
+            {
+                Vector3 rightOffset = new Vector3(1.2f, 1, 0);
+                Vector3 leftOffset = new Vector3(-1.2f, 1, 0);
+                Instantiate(projectile, transform.position + rightOffset, transform.rotation);
+                Instantiate(projectile, transform.position + leftOffset, transform.rotation);
+                Vector3 right0ffset = new Vector3(1.4f, 1.2f, 0);
+                Vector3 left0ffset = new Vector3(-1.4f, 1.2f, 0);
+                Instantiate(projectile, transform.position + right0ffset, transform.rotation);
+                Instantiate(projectile, transform.position + left0ffset, transform.rotation);
+                Vector3 rightoffset = new Vector3(1.6f, 1.4f, 0);
+                Vector3 leftoffset = new Vector3(-1.6f, 1.4f, 0);
+                Instantiate(projectile, transform.position + rightoffset, transform.rotation);
+                Instantiate(projectile, transform.position + leftoffset, transform.rotation);
+                Vector3 rightOOfset = new Vector3(1.8f, 1.6f, 0);
+                Vector3 leftOOfset = new Vector3(-1.8f, 1.6f, 0);
+                Instantiate(projectile, transform.position + rightOOfset, transform.rotation);
+                Instantiate(projectile, transform.position + leftOOfset, transform.rotation);
+                Vector3 rightoofset = new Vector3(2f, 1.8f, 0);
+                Vector3 leftoofset = new Vector3(-2f, 1.8f, 0);
+                Instantiate(projectile, transform.position + rightoofset, transform.rotation);
+                Instantiate(projectile, transform.position + leftoofset, transform.rotation);
+            }
+
+            if (currentLevel >= 40)
+            {
+                Vector3 rightOffset = new Vector3(1.2f, 1, 0);
+                Vector3 leftOffset = new Vector3(-1.2f, 1, 0);
+                Instantiate(projectile, transform.position + rightOffset, transform.rotation);
+                Instantiate(projectile, transform.position + leftOffset, transform.rotation);
+                Vector3 right0ffset = new Vector3(1.4f, 1.2f, 0);
+                Vector3 left0ffset = new Vector3(-1.4f, 1.2f, 0);
+                Instantiate(projectile, transform.position + right0ffset, transform.rotation);
+                Instantiate(projectile, transform.position + left0ffset, transform.rotation);
+                Vector3 rightoffset = new Vector3(1.6f, 1.4f, 0);
+                Vector3 leftoffset = new Vector3(-1.6f, 1.4f, 0);
+                Instantiate(projectile, transform.position + rightoffset, transform.rotation);
+                Instantiate(projectile, transform.position + leftoffset, transform.rotation);
+                Vector3 rightOOfset = new Vector3(1.8f, 1.6f, 0);
+                Vector3 leftOOfset = new Vector3(-1.8f, 1.6f, 0);
+                Instantiate(projectile, transform.position + rightOOfset, transform.rotation);
+                Instantiate(projectile, transform.position + leftOOfset, transform.rotation);
+                Vector3 rightoofset = new Vector3(2f, 1.8f, 0);
+                Vector3 leftoofset = new Vector3(-2f, 1.8f, 0);
+                Instantiate(projectile, transform.position + rightoofset, transform.rotation);
+                Instantiate(projectile, transform.position + leftoofset, transform.rotation);
+            }
+
             /*****************************\
             |**** Add your code above ****|
             \*****************************/
