@@ -7,7 +7,7 @@ public class MoveToGoal : MonoBehaviour
 {
     public Transform goal;
     private Animator animator;
-    private NavMeshAgent agent;
+    public NavMeshAgent agent;
 
     // Start is called before the first frame update
     private void Start()
