@@ -776,6 +776,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e5d7d971019f4449a31b30891cf6841, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxPlayerHealth: 45
   currentPlayerHealth: 45
   enemyDamage: 3
   particles: {fileID: 0}

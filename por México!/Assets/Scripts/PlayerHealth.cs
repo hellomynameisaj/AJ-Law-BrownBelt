@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
+    public int maxPlayerHealth = 45;
     public int currentPlayerHealth = 45;
     public int enemyDamage = 3;
 

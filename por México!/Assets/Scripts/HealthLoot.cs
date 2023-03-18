@@ -21,9 +21,17 @@ public class HealthLoot : MonoBehaviour
         if (other.tag == "Player")
         {
             PlayerHealth ph = other.GetComponent<PlayerHealth>();
-            if (ph.currentPlayerHealth < 10)
+            if (ph.currentPlayerHealth < ph.maxPlayerHealth)
             {
-                ph.currentPlayerHealth += 1;
+                if (ph.currentPlayerHealth < ph.maxPlayerHealth)
+                {
+                    ph.currentPlayerHealth += 6;
+                }
+
+                if (ph.currentPlayerHealth > ph.maxPlayerHealth)
+                {
+                    ph.currentPlayerHealth = 45;
+                }
             }
         }
         Destroy(this.gameObject);
