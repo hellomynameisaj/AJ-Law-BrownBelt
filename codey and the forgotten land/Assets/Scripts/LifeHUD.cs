@@ -31,4 +31,14 @@ public class LifeHUD : MonoBehaviour
             background.GetComponent<GameManager>().GameOver();
         }
     }
+
+    public void HealPlayer()
+    {
+        Debug.Log("i would have rathered stayed dead if i were you");
+        if (lives < 3)
+        {
+            hearts[lives].SetActive(true);
+            lives += 1;
+        }
+    }
 }
