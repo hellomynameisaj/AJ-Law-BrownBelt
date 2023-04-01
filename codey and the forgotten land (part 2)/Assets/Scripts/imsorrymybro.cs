@@ -10,6 +10,12 @@ public class imsorrymybro : MonoBehaviour
     public void OnTriggerEnter(Collider player)
     {
         Debug.Log("please god let this work");
-         CodeyVariant.transform.Rotate(0, 0, 50 * Time.deltaTime); //rotates 50 degrees per second around z axis
+        Invoke("frozone" ,2);
+    }
+
+    private void frozone()
+    {
+        CodeyVariant.transform.Rotate(0, 0, 50 * Time.deltaTime); //rotates 50 degrees per second around z axis
+        //Time.timeScale = 0;
     }
 }
