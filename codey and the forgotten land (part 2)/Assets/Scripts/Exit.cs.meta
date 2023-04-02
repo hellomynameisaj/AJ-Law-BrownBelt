@@ -3,7 +3,9 @@ guid: c414723a8975c5f4799751519ff61d8a
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - gem: {instanceID: 0}
+  - background: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
