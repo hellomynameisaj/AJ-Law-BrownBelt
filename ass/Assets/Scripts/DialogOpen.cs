@@ -31,7 +31,55 @@ public class DialogOpen : MonoBehaviour
 
     public void searchDialog()
     {
-        dialog = "find my " + collectibles[clue] + " and i will give you an amazing cash prize of 1 cent.";
+        if(collectibles[clue] is "film")
+        {
+            dialog = "I LOST MY RARE FOOTAGE OF THE FANTASTIC FOUR (1994)";
+        }
+
+        if (collectibles[clue] is "balloons")
+        {
+            dialog = "my son lost his balloons. help me find them and he will give you 19$";
+        }
+
+        if (collectibles[clue] is "life saver")
+        {
+            dialog = "SIR, MY FISH IS DROWNING AND HE NEEDS A LIFE SAVER.";
+        }
+
+        if (collectibles[clue] is "bull's eye")
+        {
+            dialog = "help me find my bull's eye token. i was practicing archery but i lost it.";
+        }
+
+        if (collectibles[clue] is "pipe")
+        {
+            dialog = "hehe pipe";
+        }
+
+        if (collectibles[clue] is "fish")
+        {
+            dialog = "my is fish lost";
+        }
+
+        if (collectibles[clue] is "key")
+        {
+            dialog = "my key to my son's room is gone. i need to get him to stop playing fortnite";
+        }
+
+        if (collectibles[clue] is "birdhouse")
+        {
+            dialog = "MY BIRD IS LOST! HELP ME FIND HIS FAVORITE BIRDHOUSE, QUICK!";
+        }
+
+        if (collectibles[clue] is "red airhorn")
+        {
+            dialog = "my wife kicked me out of my house 'cause of my red airhorn, find it";
+        }
+
+        if (collectibles[clue] is "magic hat")
+        {
+            dialog = "i am in debt. my magic hat is lost, so i can't continue my job as a magician.";
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -48,7 +96,7 @@ public class DialogOpen : MonoBehaviour
     {
         if (pHolding.holdValue == clue)
         {
-            dialog = "thanks for the  " + collectibles[clue] + " i'll give you the cent later";
+            dialog = "thanks for the  " + collectibles[clue] + ". i've gotta go now.";
             end = true;
         }
         else
