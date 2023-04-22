@@ -1,4 +1,9 @@
-﻿public class LevelMoves : Level
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+
+public class LevelMoves : Level
 {
     public int numMoves;
     public int targetScore;
@@ -9,11 +14,6 @@
     void Start()
     {
         type = LevelType.MOVES;
-
-        for(int i=0; i<obstacleTypes.Length; i++)
-        {
-            numObstaclesLeft += grid.GetPiecesOfType(obstaclesTypes[i]).Count;
-        }
 
         hud.SetLevelType(type);
         hud.SetScore(currentScore);
@@ -45,19 +45,5 @@
     public override void OnPieceCleared(GamePiece piece)
     {
         base.OnPieceCleared(piece);
-
-        for (int i = 0; i < obstacleTypes.Length; i++)
-        {
-            numObstaclesLeft--;
-
-            hud.SetTarget(numObstaclesLeft);
-
-            if(numObstaclesLeft == 0)
-            {
-                currentScore += 1000 * (numMoves - movesUsed);
-                hud.SetScore(currentScore);
-                GameWin();
-            }
-        }
     }
 }
