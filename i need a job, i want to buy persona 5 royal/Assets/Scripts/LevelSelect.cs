@@ -16,20 +16,23 @@ public class LevelSelect : MonoBehaviour
             for (int starIndex = 1; starIndex <=3; starIndex++)
             {
                 Transform star = buttons[i].gameObject.transform.Find("star" + starIndex);
+
                 if(starIndex <= score)
                 {
                     star.gameObject.SetActive(true);
                 }
                 else
                 {
-                    star.gameObject.SetActive(false);
+                  star.gameObject.SetActive(false);
                 }
             }
         }
     }
     public void OnButtonPress(string levelName)
     {
+        Debug.Log("are you ok"); 
         SceneManager.LoadScene(levelName);
+        
     }
 
     public void OnDoneClicked()
