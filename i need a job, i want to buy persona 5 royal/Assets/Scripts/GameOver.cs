@@ -31,6 +31,7 @@ public class GameOver : MonoBehaviour
         scoreParent.SetActive(false);
         loseText.enabled = true;
 
+
         if (animator)
         {
             animator.Play("GameOverDisplay");
@@ -82,6 +83,6 @@ public class GameOver : MonoBehaviour
 
     public void OnDoneClicked()
     {
-
+        SceneManager.LoadScene(0);
     }
 }
